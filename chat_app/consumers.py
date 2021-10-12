@@ -1,5 +1,9 @@
 from channels.generic.websocket import AsyncJsonWebsocketConsumer
+import django
+django.setup()
+
 from . models import *
+
 from django.contrib.auth.models import User
 from channels.db import database_sync_to_async
 from django.contrib.humanize.templatetags.humanize import naturaltime

@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+import django
+django.setup()
 from . models import *
 from django.contrib.auth.models import User
 
